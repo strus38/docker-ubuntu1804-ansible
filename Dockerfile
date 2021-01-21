@@ -22,6 +22,7 @@ RUN apt-get update \
        rsyslog systemd systemd-cron sudo iproute2 \
        openssh-client \
        sshpass \
+       git \
     && rm -Rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean
